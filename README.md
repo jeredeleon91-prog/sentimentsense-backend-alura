@@ -230,7 +230,7 @@ graph LR
     Classifier -->|Probabilidades NEG/NEU/POS| Model
     
     Model -->|Output tensor| ONNXRuntime
-    ONNXRuntime -->|float[] probabilities| MLService
+    ONNXRuntime -->|Probabilidades array| MLService
     
     MLService -->|4. Interpretar resultado| MLService
     MLService -->|Sentimiento + Probabilidad| Service
