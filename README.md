@@ -212,7 +212,7 @@ graph LR
         MySQL[(MySQL)]
     end
     
-    Request -->|"POST /api/v1/analizar<br/>{texto, rating}"| Controller
+    Request -->|POST /api/v1/analizar| Controller
     Controller -->|AnalisisRequest DTO| Service
     Service -->|String texto| MLService
     
@@ -222,12 +222,12 @@ graph LR
     MLService -->|2. Cargar modelo| ONNXRuntime
     ONNXRuntime -->|Inicializar| Model
     
-    MLService -->|3. Crear input tensor<br/>float[1][vocab_size]| Model
+    MLService -->|3. Crear input tensor| Model
     
     Model -->|Pipeline ONNX| Tokenizer
     Tokenizer -->|Tokens| Vectorizer
     Vectorizer -->|Vector TF-IDF| Classifier
-    Classifier -->|Probabilidades<br/>[P_NEG, P_NEU, P_POS]| Model
+    Classifier -->|Probabilidades NEG/NEU/POS| Model
     
     Model -->|Output tensor| ONNXRuntime
     ONNXRuntime -->|float[] probabilities| MLService
@@ -239,7 +239,7 @@ graph LR
     MySQL -->|Analisis entity| Service
     
     Service -->|AnalisisResponse| Controller
-    Controller -->|"200 OK<br/>{sentimiento, probabilidad}"| Request
+    Controller -->|200 OK Response| Request
     
     style Model fill:#e1f5ff
     style ONNXRuntime fill:#fff4e1
