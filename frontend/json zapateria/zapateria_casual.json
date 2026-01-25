@@ -1,0 +1,42 @@
+[
+    {
+        "referenceId": "z-103",
+        "nombre": "Chuck 70 Vintage",
+        "marca": "Converse",
+        "precio": 850.00,
+        "categoria": "CASUAL",
+        "imagen": "https://www.converse.com/dw/image/v2/BCZC_PRD/on/demandware.static/-/Sites-cnv-master-catalog/default/dwe0387f3b/images/a_08/A00754C_A_08X1.jpg?sw=406",
+        "descripcion": "Las Chuck 70 combinan los mejores detalles de las Chuck de los 70 con una artesanía impecable y materiales premium.",
+        "detalles": {
+            "tallas": [
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43
+            ],
+            "rating": 4.7
+        }
+    },
+    {
+        "referenceId": "z-104",
+        "nombre": "Classic Leather",
+        "marca": "Reebok",
+        "precio": 799.00,
+        "categoria": "CASUAL",
+        "imagen": "https://images.reebok.eu/reebok-classic-leather-shoes_19728247_38891632_2048.jpg?c=1",
+        "descripcion": "Un lienzo en blanco para tu estilo. Estas zapatillas Classic Leather cuentan con líneas nítidas y colores sólidos.",
+        "detalles": {
+            "tallas": [
+                40,
+                41,
+                42,
+                44
+            ],
+            "rating": 4.5
+        }
+    }
+]

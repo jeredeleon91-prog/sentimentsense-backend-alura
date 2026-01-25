@@ -1,0 +1,40 @@
+[
+    {
+        "referenceId": "z-101",
+        "nombre": "Air Zoom Pegasus 40",
+        "marca": "Nike",
+        "precio": 1299.00,
+        "categoria": "RUNNING",
+        "imagen": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/a1c1d886-0498-4221-8f55-6b5c32857fc7/pegasus-40-road-running-shoes-60hV1G.png",
+        "descripcion": "El caballo de batalla con alas regresa. Una pisada elástica para cada carrera, con la sensación familiar de Pegasus, solo para ti.",
+        "detalles": {
+            "tallas": [
+                38,
+                39,
+                40,
+                41,
+                42,
+                43
+            ],
+            "rating": 4.8
+        }
+    },
+    {
+        "referenceId": "z-102",
+        "nombre": "Ultraboost Light",
+        "marca": "Adidas",
+        "precio": 1450.00,
+        "categoria": "RUNNING",
+        "imagen": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0fbed4646c1d46e0aae0afc90101e56b_9366/Ultraboost_Light_Running_Shoes_White_HQ6351_01_standard.jpg",
+        "descripcion": "Siente la energía épica con el nuevo Ultraboost Light, nuestro Ultraboost más ligero hasta la fecha. La magia está en la entresuela Light BOOST.",
+        "detalles": {
+            "tallas": [
+                39,
+                40,
+                41,
+                42
+            ],
+            "rating": 4.9
+        }
+    }
+]

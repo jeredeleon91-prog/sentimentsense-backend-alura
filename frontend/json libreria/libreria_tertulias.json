@@ -1,0 +1,26 @@
+[
+    {
+        "nombre": "Clásicos del Siglo XX",
+        "host": "Prof. García",
+        "precio": 0.00,
+        "categoria": "Evento",
+        "descripcion": "Análisis y debate",
+        "fecha": "Viernes 20:00"
+    },
+    {
+        "nombre": "Ciencia Ficción Moderna",
+        "host": "Dr. Martínez",
+        "precio": 0.00,
+        "categoria": "Evento",
+        "descripcion": "Explorando mundos futuros",
+        "fecha": "Sábado 18:00"
+    },
+    {
+        "nombre": "Poesía Latinoamericana",
+        "host": "María López",
+        "precio": 0.00,
+        "categoria": "Evento",
+        "descripcion": "Recital y conversación",
+        "fecha": "Domingo 17:00"
+    }
+]

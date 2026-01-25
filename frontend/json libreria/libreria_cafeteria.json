@@ -1,0 +1,50 @@
+[
+    {
+        "nombre": "Espresso Leonardo",
+        "precio": 3.50,
+        "categoria": "Bebidas Calientes",
+        "descripcion": "Café intenso con notas de chocolate"
+    },
+    {
+        "nombre": "Latte Da Vinci",
+        "precio": 4.50,
+        "categoria": "Bebidas Calientes",
+        "descripcion": "Espresso con leche cremosa y arte latte"
+    },
+    {
+        "nombre": "Cappuccino Vitruvio",
+        "precio": 4.00,
+        "categoria": "Bebidas Calientes",
+        "descripcion": "Equilibrio perfecto de café, leche y espuma"
+    },
+    {
+        "nombre": "Chocolate del Renacimiento",
+        "precio": 4.50,
+        "categoria": "Bebidas Calientes",
+        "descripcion": "Chocolate belga con crema batida"
+    },
+    {
+        "nombre": "Croissant de Almendras",
+        "precio": 3.00,
+        "categoria": "Snacks & Postres",
+        "descripcion": "Horneado fresco cada mañana"
+    },
+    {
+        "nombre": "Tarta de Miel y Nueces",
+        "precio": 5.00,
+        "categoria": "Snacks & Postres",
+        "descripcion": "Receta tradicional toscana"
+    },
+    {
+        "nombre": "Galletas de Lavanda",
+        "precio": 2.50,
+        "categoria": "Snacks & Postres",
+        "descripcion": "Artesanales con lavanda de Provenza"
+    },
+    {
+        "nombre": "Brownie de Café",
+        "precio": 4.00,
+        "categoria": "Snacks & Postres",
+        "descripcion": "Intenso y húmedo, con nueces"
+    }
+]

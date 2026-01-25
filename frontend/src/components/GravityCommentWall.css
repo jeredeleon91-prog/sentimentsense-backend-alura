@@ -1,0 +1,241 @@
+/* ============================================
+   GRAVITY WALL STYLES
+   Interactive Physics-based Comments
+   ============================================ */
+
+.gravity-wall-container {
+    width: 100%;
+    min-height: 500px;
+    padding: 1rem;
+    position: relative;
+    /* Optional: subtle space background pattern */
+    background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+    background-size: 20px 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    /* Keep dragged items inside mostly */
+}
+
+/* Empty State */
+.gravity-empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    color: #64748B;
+    text-align: center;
+}
+
+.gravity-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Masonry Grid */
+.gravity-masonry-grid {
+    column-count: 3;
+    column-gap: 1.5rem;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .gravity-masonry-grid {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 640px) {
+    .gravity-masonry-grid {
+        column-count: 1;
+    }
+}
+
+/* Card Styles */
+.gravity-card {
+    break-inside: avoid;
+    /* Prevent column break split */
+    margin-bottom: 1.5rem;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+/* Dark Theme Support */
+[data-theme="dark"] .gravity-wall-container {
+    background-image: radial-gradient(var(--border-color) 1px, transparent 1px);
+}
+
+[data-theme="dark"] .gravity-card {
+    background: var(--bg-card);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .gravity-name {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .gravity-date {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .gravity-content p {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .gravity-avatar {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+}
+
+[data-theme="dark"] .reply-content {
+    background: var(--bg-input);
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .reply-content strong {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .gravity-empty-state {
+    color: var(--text-secondary);
+}
+
+/* Sentiment Variants */
+.gravity-card.positivo {
+    border-bottom: 4px solid #22C55E;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(220, 252, 231, 0.4) 100%);
+}
+
+.gravity-card.negativo {
+    border-bottom: 4px solid #EF4444;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(254, 226, 226, 0.4) 100%);
+}
+
+.gravity-card.neutro {
+    border-bottom: 4px solid #94A3B8;
+}
+
+/* Card Content */
+.gravity-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.gravity-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #1E293B, #334155);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 10px rgba(30, 41, 59, 0.2);
+}
+
+.gravity-meta {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.gravity-name {
+    font-weight: 700;
+    color: #1E293B;
+    font-size: 0.9rem;
+}
+
+.gravity-date {
+    font-size: 0.75rem;
+    color: #94A3B8;
+}
+
+.gravity-sentiment-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.gravity-sentiment-dot.positivo {
+    background: #22C55E;
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.4);
+}
+
+.gravity-sentiment-dot.negativo {
+    background: #EF4444;
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.4);
+}
+
+.gravity-sentiment-dot.neutro {
+    background: #94A3B8;
+}
+
+.gravity-content p {
+    color: #334155;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.gravity-stars {
+    margin-top: 0.75rem;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+/* Reply Section */
+.gravity-reply {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px dashed #CBD5E1;
+    display: flex;
+    gap: 0.75rem;
+    font-size: 0.85rem;
+}
+
+.reply-marker {
+    width: 2px;
+    background: #CBD5E1;
+    border-radius: 2px;
+}
+
+.reply-content {
+    color: #64748B;
+    flex: 1;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+}
+
+.reply-content strong {
+    color: #475569;
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}

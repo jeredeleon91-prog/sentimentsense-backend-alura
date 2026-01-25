@@ -1,0 +1,19 @@
+[
+    {
+        "referenceId": "z-105",
+        "nombre": "Mocasin Italiano Jordaan",
+        "marca": "Gucci",
+        "precio": 5200.00,
+        "categoria": "FORMAL",
+        "imagen": "https://media.gucci.com/style/DarkGray_Center_0_0_800x800/1683220508/739110_1W600_1000_001_100_0000_Light-Mocasines-Jordaan-de-piel-para-hombre.jpg",
+        "descripcion": "El mocasín Jordaan es un zapato clave de Gucci con su forma esbelta y el detalle de Horsebit.",
+        "detalles": {
+            "tallas": [
+                40,
+                41,
+                42
+            ],
+            "rating": 5.0
+        }
+    }
+]

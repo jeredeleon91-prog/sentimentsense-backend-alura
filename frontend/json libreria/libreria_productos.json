@@ -1,0 +1,42 @@
+[
+    {
+        "nombre": "Homo Deus",
+        "autor": "Yuval Noah Harari",
+        "precio": 149.00,
+        "categoria": "Ensayo",
+        "descripcion": "Una breve historia del mañana",
+        "imagen": "https://covers.openlibrary.org/b/id/8091016-L.jpg"
+    },
+    {
+        "nombre": "The Splendid and the Vile",
+        "autor": "Erik Larson",
+        "precio": 185.00,
+        "categoria": "Historia",
+        "descripcion": "Una saga de Churchill, familia y desafío",
+        "imagen": "https://covers.openlibrary.org/b/id/10389354-L.jpg"
+    },
+    {
+        "nombre": "12 Rules for Life",
+        "autor": "Jordan B. Peterson",
+        "precio": 11.99,
+        "categoria": "Autoayuda",
+        "descripcion": "Un antídoto al caos",
+        "imagen": "https://covers.openlibrary.org/b/id/8479576-L.jpg"
+    },
+    {
+        "nombre": "Harry Potter y el Cáliz de Fuego",
+        "autor": "J.K. Rowling",
+        "precio": 195.00,
+        "categoria": "Fantasía",
+        "descripcion": "Cuarto libro de la saga de Harry Potter",
+        "imagen": "https://covers.openlibrary.org/b/id/10110415-L.jpg"
+    },
+    {
+        "nombre": "Brave New World",
+        "autor": "Aldous Huxley",
+        "precio": 120.00,
+        "categoria": "Ciencia Ficción",
+        "descripcion": "Una visión distópica del futuro",
+        "imagen": "https://covers.openlibrary.org/b/id/9251896-L.jpg"
+    }
+]

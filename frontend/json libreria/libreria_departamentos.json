@@ -1,0 +1,20 @@
+[
+  {
+    "nombre": "LIBROS",
+    "codigo": "LIB-001",
+    "descripcion": "Biblioteca general y bestsellers",
+    "colorHex": "#3B82F6"
+  },
+  {
+    "nombre": "CAFETERIA",
+    "codigo": "CAF-001",
+    "descripcion": "Menú de cafetería y especialidades",
+    "colorHex": "#D97706"
+  },
+  {
+    "nombre": "TERTULIAS",
+    "codigo": "TER-001",
+    "descripcion": "Eventos y grupos de discusión",
+    "colorHex": "#8B5CF6"
+  }
+]

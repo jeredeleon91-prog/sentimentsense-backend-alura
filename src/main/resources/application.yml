@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: sentimentsense
+  datasource:
+    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:sentimentsense_db}?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: zhX3OmfCze85Q4SVK3vPRsOevbz1xA
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+    show-sql: true
+  
+sentimentsense:
+  ml:
+    model-path: src/main/resources/models/pipeline_sentimiento.onnx
+  security:
+    api-key-header: X-API-KEY
+    admin-jwt-secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+    jwt-expiration: 86400000 # 1 day
+
+server:
+  port: 8080

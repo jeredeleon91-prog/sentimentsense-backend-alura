@@ -1,0 +1,20 @@
+[
+    {
+        "nombre": "RUNNING",
+        "codigo": "RUN",
+        "descripcion": "Calzado especializado para correr",
+        "colorHex": "#EF4444"
+    },
+    {
+        "nombre": "CASUAL",
+        "codigo": "CAS",
+        "descripcion": "Estilo urbano y relajado",
+        "colorHex": "#10B981"
+    },
+    {
+        "nombre": "FORMAL",
+        "codigo": "FOR",
+        "descripcion": "Elegancia para ocasiones especiales",
+        "colorHex": "#1F2937"
+    }
+]
