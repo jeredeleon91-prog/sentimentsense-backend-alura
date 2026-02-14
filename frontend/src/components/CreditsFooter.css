@@ -62,10 +62,9 @@
     align-items: start;
 }
 
-@media (min-width: 768px) {
-    .credits-grid {
-        grid-template-columns: 1fr 1fr;
-    }
+.credits-grid-single {
+    display: flex;
+    justify-content: center;
 }
 
 /* Team Sections */
@@ -90,11 +89,7 @@
     letter-spacing: 0.05em;
 }
 
-.team-title-ds {
-    color: #818cf8;
-}
 
-/* indigo-400 */
 .team-title-be {
     color: #34d399;
 }
@@ -104,8 +99,8 @@
 /* Card Styling */
 .credits-card {
     width: 100%;
-    max-width: 350px;
-    height: 70px;
+    max-width: 400px;
+    height: 80px;
     background-color: rgba(30, 41, 59, 0.5);
     /* slate-800/50 */
     border: 1px solid rgba(51, 65, 85, 0.5);
@@ -144,11 +139,6 @@
     flex-shrink: 0;
 }
 
-.avatar-ds {
-    background-color: rgba(99, 102, 241, 0.2);
-    color: #a5b4fc;
-}
-
 .avatar-be {
     background-color: rgba(16, 185, 129, 0.2);
     color: #6ee7b7;
@@ -156,7 +146,7 @@
 
 /* Text Content */
 .member-name {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 700;
     color: white;
     line-height: 1.25;
@@ -169,9 +159,7 @@
     margin: 0;
 }
 
-.role-ds {
-    color: #a5b4fc;
-}
+
 
 .role-be {
     color: #6ee7b7;
@@ -198,15 +186,7 @@
     color: white;
 }
 
-/* Progress Bar */
-.progress-bar {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    background-color: #6366f1;
-    /* indigo-500 */
-}
+
 
 /* Footer Copyright */
 .credits-copyright {
